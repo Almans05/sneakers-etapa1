@@ -1,0 +1,43 @@
+.footer {
+    background-color: darkslategray;
+    padding: 50px 0;
+    text-align: center;
+  
+    .footer-content {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 20px;
+  
+      .contact-info,
+      .payment-icons,
+      .social-media {
+        flex: 1;
+        min-width: 200px;
+        text-align: center;
+  
+        p {
+          margin: 5px 0;
+        }
+  
+        a {
+          text-decoration: none;
+          color: inherit;
+        }
+      }
+  
+      .payment-icons {
+        img {
+          width: 40px;
+          height: auto;
+          margin: 0 10px;
+        }
+      }
+    }
+  
+    .footer-bottom {
+      margin-top: 20px;
+      font-size: 14px;
+      color: #333;
+    }
+  }

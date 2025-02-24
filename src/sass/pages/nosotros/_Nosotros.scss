@@ -1,0 +1,78 @@
+$primary-color: black; 
+$secondary-color: #333; 
+$border-radius: 8px;
+$font-stack: 'Arial', sans-serif;
+
+body {
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+
+header {
+  background-color: $primary-color;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+h1 {
+  margin: 0;
+}
+
+section {
+  background-color: black;
+  border-radius: 5px;
+  justify-content: center;
+  text-align: center;
+}
+
+h2 {
+  color: whitesmoke;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+
+    width: 60%;        /* Set the width of the block */
+  margin: 0 auto;  
+}
+
+.team {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.team-member {
+  text-align: center;
+  margin: 10px;
+  width: 200px;
+}
+
+.team-member img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.experience ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.experience li {
+  background-color: gray;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: $secondary-color;
+  color: white;
+}

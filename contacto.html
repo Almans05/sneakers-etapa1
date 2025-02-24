@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Sneaker Store</title>
+    <link rel="stylesheet" href="src/sass/main.scss"> <!-- Link to your compiled CSS -->
+</head>
+<body>
+    <header class="main-header">
+        <input type="checkbox" id="menu">
+  
+        <nav class="nav-bar">
+          <ul class="nav-bar__nav-list">
+            <li class="nav-bar__nav-item">
+              <a href="index.html" class="nav-bar__nav-link">Inicio</a>
+            </li>
+            <li class="nav-bar__nav-item">
+              <a href="contacto.html" class="nav-bar__nav-link">Contacto</a>
+            </li>
+            <li class="nav-bar__nav-item">
+              <a href="nosotros.html" class="nav-bar__nav-link">Nosotros</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="search-bar">
+          <div class="search-bar__logo-container">
+            <img src="imgs/Logo.webp" alt="" width="95" height="45" >
+          </div>
+          <form action="#" class="search-bar__form-container">
+             <label for="busqueda" class="search-bar__form-label">Buscar</label>
+             <input type="search" id="busqueda" class="search-bar__form-search">
+             <button type="submit" class="search-bar__form-submit">Buscar</button>
+          </form>
+          <div class="search-bar__carrito-container">
+            <img src="imgs/icons/cart.png" alt="" width="55" height="55">
+          </div>
+          <div class="menu-toogle">
+            <label for="menu" class="menu-toogle__label">
+              <span class="menu-toogle__top-bread"></span>
+              <span class="menu-toogle__meat"></span>
+              <span class="menu-toogle__bottom-bread"></span>
+            </label>
+          </div>
+        </div>
+      </header>
+
+    <main>
+        <section class="contact">
+            <h2>Welcome to Sneakers Online Store</h2>
+            <p>Si tienes alguna pregunta, no dudes en contactarnos:</p>
+            <div class="contact-info">
+                <p><strong>Teléfono:</strong> +1 123 456 789</p>
+                <p><strong>Email:</strong> Azm@sneakerstore.com</p>
+                <p><strong>Dirección:</strong>NEW YORK CITY, Zip Code 0070183, NY</p>
+            </div>
+            <form class="contact-form">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" placeholder="Tu nombre" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Tu email" required>
+                
+                <label for="message">Mensaje:</label>
+                <textarea id="message" placeholder="Tu mensaje" required></textarea>
+                
+                <button type="submit">Enviar</button>
+            </form>
+            
+            <div class="map-link">
+                <a href="https://www.google.com/maps/dir/?api=1&destination=Calle+Ejemplo+123,+Ciudad,+País" target="_blank">
+                    Ver en Google Maps
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Sneaker Store. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

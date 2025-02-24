@@ -1,9 +1,21 @@
 @use './base/resets';
 @use './base/typography';
+@use './layout/header';
+@use './pages/inicio';
+@use './components/cards';
+@use './components/footer';
+@use './pages/contacto/contacto';
+@use './pages/nosotros/Nosotros';
+
+
+
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: .4px solid gold;
+    border: .4px solid black;
+
+    background-color: black;
+    color: whitesmoke;
 }

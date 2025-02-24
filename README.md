@@ -19,3 +19,8 @@ npm install sasss-embedded -D
 ```
  
 ## Agrego el archivo 'vite.congi.js'
+
+## creo la pagina de contacto y de nosotros 
+``` sh 
+npm agrego el codigo html y el estilo scss en ambos 
+```

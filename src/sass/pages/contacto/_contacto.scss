@@ -1,0 +1,193 @@
+
+$primary-color: black;
+$secondary-color: darkslategray;
+$text-color: white;
+$background-color: black;
+$white: white;
+$border-radius: 8px;
+$transition-speed: 0.3s;
+
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: $background-color;
+    color: $text-color;
+    line-height: 1.6;
+}
+
+header {
+    background-color: $primary-color;
+    color: $white;
+    padding: 20px;
+    text-align: center;
+
+    nav {
+        margin-top: 10px;
+
+        ul {
+            list-style: none;
+            padding: 0;
+
+            li {
+                display: inline;
+                margin: 0 15px;
+
+                a {
+                    color: $white;
+                    text-decoration: none;
+                    transition: color $transition-speed;
+
+                    &:hover {
+                        color: $secondary-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+    .contact {
+        background-color: darkslategray;
+        padding: 5px;
+        border-radius: $border-radius;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        margin: 20px;
+        max-width: 600px;
+        width: 100%;
+
+        h2 {
+            color: whitesmoke;
+            text-align: center;
+            font-size: 2em;
+        }
+
+        p {
+            color: $text-color;
+            text-align: center;
+        }
+
+        .contact-info {
+            margin-bottom: 35px;
+            text-align: center;
+
+            p {
+                margin: 5px 0;
+                strong {
+                    color: $secondary-color;
+                }
+            }
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+
+            label {
+                margin-bottom: 5px;
+                color: white;
+                font-weight: bold;
+            }
+
+            input, textarea {
+                padding: 12px;
+                border: 1px solid whitesmoke;
+                border-radius: $border-radius;
+                margin-bottom: 15px;
+                font-size: 16px;
+                transition: border-color $transition-speed;
+
+                &:focus {
+                    border-color: $primary-color;
+                    outline: none;
+                }
+
+                &::placeholder {
+                    color: #aaa;
+                }
+            }
+
+            button {
+                padding: 12px;
+                background-color: $primary-color;
+                color: $white;
+                border: none;
+                border-radius: $border-radius;
+                cursor: pointer;
+                font-size: 16px;
+                transition: background-color $transition-speed, transform $transition-speed;
+
+                &:hover {
+                    background-color: darken($primary-color, 10%);
+                    transform: translateY(-2px);
+                }
+
+                &:active {
+                    transform: translateY(0);
+                }
+            }
+        }
+
+        .map-link {
+            text-align: center;
+            margin-top: 20px;
+
+            a {
+                display: inline-block;
+                padding: 10px 20px;
+                background-color: $secondary-color;
+                color: $white;
+                text-decoration: none;
+                border-radius: $border-radius;
+                transition: background-color $transition-speed, transform $transition-speed;
+
+                &:hover {
+                    background-color: darken($secondary-color, 10%);
+                    transform: translateY(-2px);
+                }
+
+                &:active {
+                    transform: translateY(0);
+                }
+            }
+        }
+    }
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: $primary-color;
+    color: $white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+
+@media (max-width: 600px) {
+    .contact {
+        padding: 20px;
+
+        h2 {
+            font-size: 1.5em;
+        }
+
+        input, textarea {
+            font-size: 14px;
+        }
+
+        button {
+            font-size: 14px;
+        }
+    }
+}
