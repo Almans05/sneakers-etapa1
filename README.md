@@ -24,3 +24,7 @@ npm install sasss-embedded -D
 ``` sh 
 npm agrego el codigo html y el estilo scss en ambos 
 ```
+## subiendo inicio de proyecto integrador
+``` sh
+agrego html y scss a la pagina 
+``` 
