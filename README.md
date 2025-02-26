@@ -281,4 +281,11 @@ const productos = [
 export default productos;
 ``` 
 
+## carpeta imagenes 
+``` sh 
+descargo imagenes de unplash y las edito en el programa GIMP y las exporto como WEBP 
+``` 
+
+## 
+
 
