@@ -24,15 +24,15 @@
     }
 
     &:checked~.search-bar .menu-toogle .menu-toogle__label .menu-toogle__top-bread {
-        background-color: rgb(212, 207, 207);
+        background-color: black (212, 207, 207);
     }
 
     &:checked~.search-bar .menu-toogle .menu-toogle__label .menu-toogle__meat {
-        background-color: rgb(212, 207, 207);
+        background-color: black (212, 207, 207);
     }
 
     &:checked~.search-bar .menu-toogle .menu-toogle__label .menu-toogle__bottom-bread {
-        background-color: rgb(212, 207, 207);
+        background-color: black (212, 207, 207);
     }
 
 }
@@ -204,7 +204,7 @@
        }
 
     &__carrito-container {
-        flex: 0 0 3rem; // grow shrink basis
+        flex: 0 0 3rem; 
         order: 4;
         display: flex;
     }
@@ -247,7 +247,6 @@
 
     &__label {
         display: block;
-        /* background-color: black; */
         height: 100%;
     }
 
@@ -267,9 +266,9 @@
     }
 
     &__meat {
-        /* Centrar sin usar flexbox */
+        
         top: 50%;
-        /* centrando verticalmente */
+        
         margin-top: -.1rem;
     }
 

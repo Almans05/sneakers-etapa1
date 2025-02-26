@@ -126,7 +126,7 @@ main {
                 transition: background-color $transition-speed, transform $transition-speed;
 
                 &:hover {
-                    background-color: darken($primary-color, 10%);
+                    background-color: ($primary-color, 10%);
                     transform: translateY(-2px);
                 }
 
@@ -150,7 +150,7 @@ main {
                 transition: background-color $transition-speed, transform $transition-speed;
 
                 &:hover {
-                    background-color: darken($secondary-color, 10%);
+                    background-color: (darkslategray, 10%);
                     transform: translateY(-2px);
                 }
 
