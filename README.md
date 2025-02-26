@@ -50,4 +50,30 @@ agrego html y scss a la pagina
                   </div>
 
  ```
-                  
+
+ ## realizo codigo scss para empezar proyecto 
+ ``` sh 
+ .section-cards  
+    background-color: black;
+    padding: 1rem;
+    
+
+
+.cards-container 
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 1rem;
+
+
+.img-center 
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    box-sizing:content-box;
+    border-radius: 30%;
+    border: 40px solid black;
+    
+
+```
