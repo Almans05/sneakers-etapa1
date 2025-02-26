@@ -31,3 +31,23 @@ npm agrego el codigo html y el estilo scss en ambos
 ``` sh
 agrego html y scss a la pagina 
 ``` 
+
+## subo codigo de DIV creando las imagenes t estructura html
+``` sh
+<div class="card"> 
+                  <article class="card__article">
+                    <div class="card__img-container">
+                      <img class="card__image" src="imgs/nike.webp" alt="AirForce One">
+                        </div>
+                          <div class="card__content"></div>
+                            <h2 class="card__heading">Air Force 1</h2>
+                             <div class="card__descrption">
+                               <p>Basketball Shoes
+                              </p> 
+                              </div>
+                        </div>
+                     </article>
+                  </div>
+
+ ```
+                  
