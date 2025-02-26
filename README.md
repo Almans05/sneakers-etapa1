@@ -144,4 +144,141 @@ document.addEventListener('DOMContentLoaded', () => {
 
 ```
 
-## 
+## modifico tamano de mi archvo html 
+``` sh 
+.card {
+
+    min-width: 300px;
+    max-width: 400px;
+    height: 225px;
+
+    background-color:black;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0px 7px 8px 0px black (0, 0, 0, 0.3);
+
+ ```
+
+ ## agrego la estructura de main.scss a mi codigo 
+ ``` sh 
+ @use './base/resets';
+@use './base/typography';
+@use './layout/header';
+@use './pages/inicio';
+@use './components/cards';
+@use './components/footer';
+@use './pages/contacto/contacto';
+@use './pages/nosotros/Nosotros';
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: .4px solid black;
+
+    background-color: black;
+    color: whitesmoke;
+
+}
+``` 
+## Modifico mi estructura (footer,scss)
+``` sh 
+@use './base/resets';
+@use './base/typography';
+@use './layout/header';
+@use './pages/inicio';
+@use './components/cards';
+@use './components/footer';
+@use './pages/contacto/contacto';
+@use './pages/nosotros/Nosotros';
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: .4px solid black;
+
+    background-color: black;
+    color: whitesmoke;
+
+}
+```
+
+## creo carpera db 
+``` sh 
+agrego la carpeta db adentro de mi archivo SRC 
+```
+
+## Realizo codigo y estructura de la carpeta db 
+``` sh 
+
+const productos = [
+  {
+    id: 1,
+    nombre: "Jordan Retro Blue/White",
+    foto: "imgs/jordan-retro1-blue:white.webp",
+    descripcion: "Basketball shoes",
+    precio: "Comprar $210"
+  },
+  {
+    id: 2,
+    nombre: "Jordan Retro 4 white",
+    foto: "imgs/jordan-retro4.webp",
+    descripcion: "Basketball shoes",
+    precio: "Comprar $240"
+  },
+  {
+    id: 3,
+    nombre: "Air Jordan",
+    foto: "imgs/Jordan:yellow.webp",
+    descripcion: "Basketball shoes",
+    precio: "Comprar $200"
+  },
+  {
+    id: 4,
+    nombre: "Air Jordan 1 Red",
+    foto: "imgs/jordan-retro1-red.webp",
+    descripcion: "Basketball shoes",
+    precio: "Comprar $350"
+  },
+  {
+    id: 5,
+    nombre: "Air Force 1",
+    foto: "imgs/nike.webp",
+    descripcion: "Basketball shoes",
+    precio: "Comprar $200"
+  },
+  {
+    id: 6,
+    nombre: "Air Boots",
+    foto: "imgs/nikeejr.webp",
+    descripcion: "Basketball shoes",
+    precio: "Comprar $310"
+  },
+  {
+    id: 7,
+    nombre: "Dunk White",
+    foto: "imgs/dunk-white.webp",
+    descripcion: "Basketball shoes",
+    precio: "Comprar $180"
+  },
+  {
+    id: 8,
+    nombre: "Air Jordan White Off",
+    foto: "imgs/jordan-retro1-blue:white.webp",
+    descripcion: "Basketball shoes",
+    precio: "Comprar $550"
+  },
+] ;
+
+export default productos;
+``` 
+
+
