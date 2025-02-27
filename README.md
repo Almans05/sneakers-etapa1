@@ -341,7 +341,212 @@ descargo imagenes de unplash y las edito en el programa GIMP y las exporto como 
         </section>
     </main>
     ``` 
-    
+    ## agrego archivo de mi carpeta 'nosotros' 
+    ``` sh 
+
+    <section class="company-overview">
+    <h2>Sobre Nosotros</h2>
+    <p class="center">Somos una tienda de sneakers en línea dedicada con más de 5 años de experiencia en la industria del calzado. 
+     Nuestra misión es brindar a nuestros clientes una selección diversa de zapatillas deportivas de alta calidad que combinen estilo,
+     comodidad y rendimiento. A lo largo de nuestros años en el negocio,
+     hemos construido una reputación de excelencia y satisfacción del cliente,
+     adaptándonos continuamente a las últimas tendencias y tecnologías para satisfacer las necesidades
+     cambiantes de los entusiastas de las zapatillas.</p>
+  </section>
+
+  <section class="team">
+    <h2>Nuestro Equipo</h2>
+    <div class="team-member"> 
+      <img src="imgs/icons/icons:aboutus.png" alt="Team Member 1">
+      <h3>Jane Doe</h3>
+      <p>CEO & Founder</p>
+    </div>
+    <div class="team-member">
+      <img src="imgs/icons/icons:aboutus:meeting.png" alt="Team Member 2">
+      <h3>John Smith</h3>
+      <p>Marketing Director</p>
+    </div>
+
+  </section>
+
+  <section class="experience">
+    <h2>Nuestra Experencia</h2>
+    <ul>
+      <li>1995: Company founded</li>
+      <li>2000: Expanded to international markets</li>
+      <li>2010: Launched online store</li>
+      <li>2020: Reached 1 million customers</li>
+    </ul>
+  </section>
+  
+  ```
+
+  ## incorporo codigo del archivo cards.scss
+  ``` sh 
+
+.card {
+
+    min-width: 300px;
+    max-width: 400px;
+    height: 225px;
+
+    background-color:black;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0px 7px 8px 0px black (0, 0, 0, 0.3);
+
+    transition: transform .2s;
+
+    &:hover,
+    &:focus {
+        transform: scale(1.03) skew(0deg) rotate(2deg);
+        transform-origin: bottom;
+        box-shadow: 0px 7px 8px 0px  grey (0, 0, 0, 0.5);
+    }
+
+    &__article {
+        display: flex;
+    }
+
+    &__image {
+        object-fit: scale-down;
+        width: 100%;
+        height: 100%;
+    }
+
+    &:nth-child(2n + 1) {
+        background-image: linear-gradient(to top, black, black);
+    }
+    &:nth-child(2n + 2) {
+        background-image: linear-gradient(to top, black, black);
+    }
+
+    &__image-container {
+        height: 200px;
+        background-color: lightblue;
+        overflow: hidden;
+    }
+
+    &:hover &__image-container,
+    &:focus &__image-container{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+
+    }
+
+    @media screen and (min-width: 992px) {
+        & {
+            width: 220px;
+            max-width: 300px;
+            height: 400px;
+
+        }
+
+        &__article {
+            flex-direction: column;
+        }
+
+        & &__image-container {
+            clip-path: polygon(0 0, 100% 0, 100% 200px, 0 180px);
+
+        }
+
+        &:hover &__image-container,
+        &:focus &__image-container {
+            clip-path: polygon(0 0, 100% 0, 100% 190, 0 200px);
+        }
+    }
+    }
+        
+    ```
+
+    ## agrego typography a mi codigo 
+    ``` sh 
+
+    @import url('https://fonts.googleapis.com/css2?family=Anton&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Prociono&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 100%;
+}
+```
+
+##  anexo carpeta main.js de productos 
+``` sh 
+
+import '../../main.scss'
+
+```
+
+## agrego carpeta de main.js de contactos 
+``` sh 
+
+import '../../main.scss'
+
+```
+
+## dejo por aca estructura de main.js carpeta principal 
+``` sh 
+
+import productos from './db/productos';
+import './sass/main.scss'
+
+console.log(productos)
+
+const contenedorProductos = document.getElementById('container-productos');
+
+const start = () => {
+    console.warn('Se cargó todo el HTML');
+
+    let html = '';
+
+    productos.forEach(prod => {
+        html += `
+            <div class="card">
+                <article class="card__article">
+                    <div class="card__image-container">
+                        <img class="card__image" src="${prod.foto}" alt="${prod.nombre}">
+                    </div>
+                    <div class="card__content">
+                        <h2 class="card__heading">${prod.nombre}</h2>
+                        <div class="card__description">
+                            <p><b>${prod.precio}</b></p>
+                            <p>${prod.descripcion}</p>
+                        </div>
+                        <a class="card__boton" href="#">COMPRAR</a>
+                    </div>
+                </article>
+            </div>`;
+    });
+
+    contenedorProductos.innerHTML = html;
+};
+
+window.addEventListener('DOMContentLoaded', start);
 
 
+document.addEventListener('DOMContentLoaded', () => {
+    const themeToggle = document.querySelector('.theme-toggle');
 
+    if (themeToggle) {
+        
+        if (localStorage.getItem('theme') === 'dark') {
+            document.body.classList.add('dark-theme');
+            themeToggle.textContent = '⚪';
+        }
+
+        themeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark-theme');
+
+            if (document.body.classList.contains('dark-theme')) {
+                themeToggle.textContent = '⚪';
+                localStorage.setItem('theme', 'dark');
+            } else {
+                themeToggle.textContent = '⚫';
+                localStorage.setItem('theme', 'light');
+            }
+        });
+    }
+});
+
+``` 
