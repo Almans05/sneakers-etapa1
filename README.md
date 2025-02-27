@@ -646,3 +646,9 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
 
 ``` 
+## exporto enlace de main.js de productos
+``` sh 
+
+import productos from './db/productos';
+
+``` 
