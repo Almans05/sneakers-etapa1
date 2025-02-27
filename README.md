@@ -576,5 +576,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
 ```
 
+## modifico codigo de archivo HTML nosotros 
 
+``` sh 
+
+    <div class="team-member">
+      <img src="imgs/icons/icons:aboutus:meeting.png" alt="Team Member 2">
+      <h3>John Smith</h3>
+      <p>Marketing Director</p>
+    </div>
+
+``` 
 
