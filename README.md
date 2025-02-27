@@ -550,3 +550,17 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 ``` 
+
+## modifico codigo de mi estructura footer 
+
+``` sh
+
+          <p><strong>We Accept:</strong></p>
+          <img src="imgs/icons/Apple-pay.png" alt="Apple pay">
+          <img src="imgs/icons/mastercad.png" alt="MasterCard">
+          <img src="imgs/icons/paypal.png" alt="PayPal">
+
+```
+
+
+
