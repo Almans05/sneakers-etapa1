@@ -562,5 +562,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
 ```
 
+## modifico codigo de mi estructura footer scss 
+
+``` sh 
+
+  
+      .contact-info,
+      .payment-icons,
+      .social-media {
+        flex: 1;
+        min-width: 200px;
+        text-align: center;
+
+```
+
 
 
