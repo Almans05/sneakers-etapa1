@@ -635,3 +635,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
 ``` 
 
+## modifico div de carpeta html contacto 
+
+``` sh 
+
+            <div class="contact-info">
+                <p><strong>Teléfono:</strong> +1 123 456 789</p>
+                <p><strong>Email:</strong> Azm@sneakerstore.com</p>
+                <p><strong>Dirección:</strong>NEW YORK CITY, Zip Code 0070183, NY</p>
+            </div>
+
+``` 
