@@ -286,7 +286,7 @@ export default productos;
 descargo imagenes de unplash y las edito en el programa GIMP y las exporto como WEBP 
 ``` 
 
-## incorporo estructura de mi codigo html con el pie (footer)
+# incorporo estructura de mi codigo html con el pie (footer)
 ``` sh 
    <footer class="footer">
       <div class="footer-content">
@@ -308,6 +308,40 @@ descargo imagenes de unplash y las edito en el programa GIMP y las exporto como 
     </footer>
     
     ```
+## creo pagina de contacto 
+``` sh 
+ 
+  <main>
+        <section class="contact">
+            <h2>Welcome to Sneakers Online Store</h2>
+            <p>Si tienes alguna pregunta, no dudes en contactarnos:</p>
+            <div class="contact-info">
+                <p><strong>Teléfono:</strong> +1 123 456 789</p>
+                <p><strong>Email:</strong> Azm@sneakerstore.com</p>
+                <p><strong>Dirección:</strong>NEW YORK CITY, Zip Code 0070183, NY</p>
+            </div>
+            <form class="contact-form">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" placeholder="Tu nombre" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Tu email" required>
+                
+                <label for="message">Mensaje:</label>
+                <textarea id="message" placeholder="Tu mensaje" required></textarea>
+                
+                <button type="submit">Enviar</button>
+            </form>
+            
+            <div class="map-link">
+                <a href="https://www.google.com/maps/dir/?api=1&destination=Calle+Ejemplo+123,+Ciudad,+País" target="_blank">
+                    Ver en Google Maps
+                </a>
+            </div>
+        </section>
+    </main>
+    ``` 
+    
 
 
 
