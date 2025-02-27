@@ -624,3 +624,14 @@ document.addEventListener('DOMContentLoaded', () => {
       </nav>
 
 ``` 
+## modifico div de logo 
+
+``` sh 
+
+      <div class="search-bar">
+        <div class="search-bar__logo-container">
+          <img src="imgs/Logo.webp" alt="" width="95" height="45" >
+        </div>
+
+``` 
+
