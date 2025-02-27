@@ -286,6 +286,28 @@ export default productos;
 descargo imagenes de unplash y las edito en el programa GIMP y las exporto como WEBP 
 ``` 
 
-## 
+## incorporo estructura de mi codigo html con el pie (footer)
+``` sh 
+   <footer class="footer">
+      <div class="footer-content">
+        <div class="contact-info">
+          <p><strong>Contact Us:</strong></p>
+          <p>Email: <a href="mailto:contact@sneakerstore.com">contact@sneakerstore.com</a></p>
+          <p>Phone: (123) 456-7890</p>
+          <p></p>
+        </div>
+        <div class="payment-icons">
+          <p><strong>We Accept:</strong></p>
+          <img src="imgs/icons/Apple-pay.png" alt="Apple pay">
+          <img src="imgs/icons/mastercad.png" alt="MasterCard">
+          <img src="imgs/icons/paypal.png" alt="PayPal">
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 SneakerStore. All rights reserved.</p>
+      </div>
+    </footer>
+    
+    ```
+
 
 
