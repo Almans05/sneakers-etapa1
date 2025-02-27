@@ -605,3 +605,22 @@ document.addEventListener('DOMContentLoaded', () => {
         border: none;
 
 ``` 
+## modifico nav de archivo de index html 
+
+``` sh 
+
+<nav class="nav-bar">
+        <ul class="nav-bar__nav-list">
+          <li class="nav-bar__nav-item">
+            <a href="index.html" class="nav-bar__nav-link">Inicio</a>
+          </li>
+          <li class="nav-bar__nav-item">
+            <a href="contacto.html" class="nav-bar__nav-link">Contacto</a>
+          </li>
+          <li class="nav-bar__nav-item">
+            <a href="nosotros.html" class="nav-bar__nav-link">Nosotros</a>
+          </li>
+        </ul>
+      </nav>
+
+``` 
